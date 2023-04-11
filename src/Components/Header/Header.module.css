@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    background-color: var(--color_beige);
+    /* padding: 30px; */
+    border: 2px solid var(--color_red);
+    border-radius: 25px;
+}
+
+.AppLogo {
+    height: 90px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .AppLogo {
+        animation: AppLogo-spin infinite 20s linear;
+    }
+}
+
+@keyframes AppLogo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.promo {
+    max-height: 90px;
+}
+
+
+.namesite {
+ font-size: 22px;
+ font-weight: 700;
+ color: var(--color_red);
+ margin-right: 10px;
+}
+
+
+.tagline {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-black);
+}

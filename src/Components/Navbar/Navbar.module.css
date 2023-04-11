@@ -1,0 +1,35 @@
+.navbar {
+    grid-area: nav;
+    width: 200px;
+    min-height: 300px;
+    padding: 30px 20px 20px;
+    background-color: var(--color_beige);
+    border: 2px solid var(--color_red);
+    border-radius: 25px;
+    background-image: url(./img/big3.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 300px;
+}
+
+.navItem {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color_black);
+    transition: color 0.3s ease-in-out;
+}
+
+.navItem:hover {
+    color: var(--color_red);
+}
+
+.navItem:not(:last-child) {
+    margin-bottom: 15px;
+}
